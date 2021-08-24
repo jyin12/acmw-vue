@@ -17,36 +17,81 @@
   </section>
 </template>
 <script>
-
-
 export default {
-  name: 'Board',
-  data () {
-    return{
-      header: 'Board Members',
+  name: "Board",
+  data() {
+    return {
+      header: "Board Members",
       members: [
-        { name: 'Annalise McLarnon', position: 'President', linkedin: 'https://www.linkedin.com/in/annalise-mclarnon-38aba9bb/', img: require('@/assets/profile/annalise.jpg') },
-        { name: 'Emily Trinh', position: 'Vice President', linkedin: 'https://www.linkedin.com/in/emily-trinh-755416151/', img: require('@/assets/profile/emily.jpg') },
-        //{ name: 'Ariel Pellumbi', position: 'Co-Vice President', linkedin: 'https://www.linkedin.com/in/arielapellumbi/', img: require('@/assets/profile/ariel.jpg') },
-        { name: 'Megha Patel', position: 'Secretary', linkedin: 'https://www.linkedin.com/in/meghapatel99/', img: require('@/assets/profile/megha.jpg') },
-        { name: 'Mary Liu', position: 'Community Service Officer', linkedin: 'https://www.linkedin.com/in/mary-liu-ba3812149/', img: require('@/assets/profile/mary.jpg') },
-        //{ name: 'Priyal Patel', position: 'Communications Officer', linkedin: 'https://www.linkedin.com/in/rose-keenan/', img: require('@/assets/profile/priyal.jpg') },
-        { name: 'Rose Keenan', position: 'Events Coordinator', linkedin: 'https://www.linkedin.com/in/rose-keenan/', img: require('@/assets/profile/rose.jpg') },
-        //{ name: 'Bianca Tuliao', position: 'Community Service Officer', linkedin: 'https://www.linkedin.com/in/biancatuliao/', img: require('@/assets/profile/bianca.jpg') },
-        //{ name: 'Zakia Hossain', position: 'Fundraising Chair', linkedin: 'https://www.linkedin.com/in/zakia-hossain/', img: require('@/assets/profile/zakia.jpg') },
-        //{ name: 'Jane Chen', position: 'Stars Coordinator', linkedin: 'https://www.linkedin.com/in/janeechenn/', img: require('@/assets/profile/jane.jpg') },
-        { name: 'Jiayi Yin', position: 'TSG Representative', linkedin: 'https://www.linkedin.com/in/jiayi-yin-65a27a195/', img: require('@/assets/profile/jiayi.jpg') },
-        { name: 'Annica Chiu', position: 'Webmaster', linkedin: 'https://www.linkedin.com/in/annica-chiu-45369a17b/', img: require('@/assets/profile/annica.jpg') }
-      ]
-    }  
+        {
+          name: "Annica Chiu",
+          position: "President",
+          linkedin: "https://www.linkedin.com/in/annica-chiu-45369a17b/",
+          img: require("@/assets/profile/annica.jpg"),
+        },
+        {
+          name: "Dariia Dragunova",
+          position: "Co-Vice President",
+          linkedin: "",
+          img: require(""),
+        }, //Need linkedin and profile picture
+        {
+          name: "Erin Ross",
+          position: "Co-Vice President",
+          linkedin: "",
+          img: require("@/assets/profile/erin.JPG"),
+        }, //Need linkedin
+        {
+          name: "Hadassah Galapo",
+          position: "Secretary",
+          linkedin: "",
+          img: require(""),
+        },
+        {
+          name: "Jiajin Gan",
+          position: "Treasurer",
+          linkedin: "",
+          img: require("@/assets/profile/jiajin.JPG"),
+        }, //Need linkedin and profile picture
+        {
+          name: "Delanie Wolff",
+          position: "Events and Community Service Officer Coordinator",
+          linkedin: "",
+          img: require(""),
+        }, //Need linked and profile picture
+        {
+          name: "Khushi Patel",
+          position: "STARS Coordinator",
+          linkedin: "",
+          img: require("@/assets/profile/khushi.jpg"),
+        }, //Need linkedin
+        {
+          name: "Jasmine Liu",
+          position: "TSG Representative",
+          linkedin: "",
+          img: require(""),
+        }, //Need linked and profile picture
+        {
+          name: "Jiayi Yin",
+          position: "Co-Webmaster",
+          linkedin: "https://www.linkedin.com/in/jiayi-yin-65a27a195/",
+          img: require("@/assets/profile/jiayi.jpg"),
+        },
+        {
+          name: "Yael Galapo",
+          position: "Co-Webmaster",
+          linkedin: "",
+          img: require(""),
+        }, //Need linkedin and profile picture
+      ],
+    };
   },
-  methods (){
-  }
-}
+  methods() {},
+};
 </script>
 
 <style scoped>
-.jumbotron{
+.jumbotron {
   width: 85%;
   background: #232323;
   margin: 0 7.5%;
@@ -56,36 +101,36 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.profile{
+.profile {
   text-align: center;
   padding: 2vh;
 }
-.profile > img{
+.profile > img {
   max-width: 80%;
   border-radius: 50%;
 }
-h2{
+h2 {
   text-align: center;
-  color: #FFD6E3;
+  color: #ffd6e3;
 }
-h4{
+h4 {
   color: #d7d5d9;
 }
-a:hover{
+a:hover {
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.row{
+.row {
   display: flex;
   justify-content: center;
 }
-p{
+p {
   color: #d7d5d9;
 }
-@media (max-width: 768px){
-  .jumbotron{ 
+@media (max-width: 768px) {
+  .jumbotron {
     width: 100%;
     margin: 0;
     border-radius: 0;
