@@ -48,11 +48,11 @@ export default {
           img: require(""),
         },
         {
-          name: "Jiajin Gan",
+          name: "Jackie Gan",
           position: "Treasurer",
           linkedin: "",
           img: require("@/assets/profile/jiajin.JPG"),
-        }, //Need linkedin and profile picture
+        }, //Need linkedin
         {
           name: "Delanie Wolff",
           position: "Events and Community Service Officer Coordinator",
