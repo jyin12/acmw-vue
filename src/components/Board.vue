@@ -5,7 +5,7 @@
       <div class="container">
         <div><h2>{{ header }}</h2></div>
           <div class="board-profiles">
-            <div class="profile" v-for="member in members">
+            <div class="profile" v-bind:key="member" v-for="member in members">
               <img :src="member.img" alt="">
               <h4>{{ member.name }}</h4>
               <p> <a target="_blank" :href="member.linkedin">{{ member.position }} <i class="fab fa-linkedin"></i></a></p>
@@ -46,7 +46,7 @@ export default {
           position: "Secretary",
           linkedin: "",
           img: require(""),
-        },
+        }, //Need  linkedin and profile picture
         {
           name: "Jackie Gan",
           position: "Treasurer",
